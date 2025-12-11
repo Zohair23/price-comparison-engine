@@ -1,0 +1,55 @@
+.price-history {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.price-history h3 {
+  margin-bottom: 15px;
+}
+
+.history-retailers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.retailer-history {
+  background: white;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.retailer-history h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.mini-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 100px;
+  gap: 3px;
+  margin-bottom: 10px;
+}
+
+.chart-bar {
+  flex: 1;
+  background: #007bff;
+  border-radius: 2px;
+  min-height: 2px;
+  transition: background 0.2s ease;
+}
+
+.chart-bar:hover {
+  background: #0056b3;
+}
+
+.price-range {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}

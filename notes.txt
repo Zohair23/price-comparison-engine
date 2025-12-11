@@ -1,0 +1,5 @@
+new features:
+connect to public api for new data
+ability to add products
+ai feature: 
+github push
