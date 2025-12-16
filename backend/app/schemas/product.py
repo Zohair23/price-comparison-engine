@@ -7,11 +7,15 @@ from datetime import datetime
 
 
 # for creating a new product
+
 class ProductCreateSchema(BaseModel):
     name: str
     description: str
     category: str
+    brand: Optional[str] = None
     image_url: Optional[str] = None
+    tags: Optional[str] = None  # comma-separated tags
+    rating: Optional[float] = None
 
 
 # for returning product data

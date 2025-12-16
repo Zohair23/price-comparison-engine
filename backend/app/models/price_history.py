@@ -19,6 +19,8 @@ class PriceHistory(Base):
     discount_percent = Column(Float, default=0)
     url = Column(String(500), nullable=True)
     in_stock = Column(String(20), default="in_stock")
+    rating = Column(Float, nullable=True)
+    review_count = Column(Integer, nullable=True)
     created_at = Column(DateTime, default=datetime.utcnow, index=True)
 
     # link to product table

@@ -32,13 +32,16 @@ class ProductService:
         return db.query(Product).filter(Product.id == product_id).first()
 
     @staticmethod
-    def create_product(db: Session, name: str, description: str, category: str, image_url: str = None):
+    def create_product(db: Session, name: str, description: str, category: str, image_url: str = None, brand: str = None, tags: str = None, rating: float = None):
         # add a new product to the database
         product = Product(
             name=name,
             description=description,
             category=category,
-            image_url=image_url
+            brand=brand,
+            image_url=image_url,
+            tags=tags,
+            rating=rating
         )
         db.add(product)
         db.commit()

@@ -7,6 +7,7 @@ from database import Base
 from datetime import datetime
 
 
+
 class Product(Base):
     __tablename__ = "products"
 
@@ -15,7 +16,10 @@ class Product(Base):
     name = Column(String(255), index=True)
     description = Column(Text)
     category = Column(String(100), index=True)
+    brand = Column(String(100), index=True, nullable=True)
     image_url = Column(String(500), nullable=True)
+    tags = Column(String(500), nullable=True)  # comma-separated tags
+    rating = Column(Float, nullable=True)
     created_at = Column(DateTime, default=datetime.utcnow)
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 

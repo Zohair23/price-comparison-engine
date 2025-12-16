@@ -15,6 +15,8 @@ class PriceHistorySchema(BaseModel):
     discount_percent: float
     url: Optional[str] = None
     in_stock: str
+    rating: Optional[float] = None
+    review_count: Optional[int] = None
     created_at: datetime
 
     class Config:

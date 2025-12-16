@@ -15,6 +15,12 @@ class Settings(BaseSettings):
     # eBay API credentials for real-time product data
     ebay_client_id: str = ""
     ebay_client_secret: str = ""
+    
+    # SerpAPI for Amazon, Walmart, Google Shopping
+    serpapi_key: str = ""
+
+    # PriceAPI for real product data
+    priceapi_key: str = ""
 
     class Config:
         env_file = ".env"
